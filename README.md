@@ -1,6 +1,6 @@
-# Casper
+# StartUp
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+The unique theme for [Ghost](http://github.com/tryghost/ghost/). Uploaded to Themeforest on sell but rejected.
 
 ## Copyright & License
 

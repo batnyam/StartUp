@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>{{meta_title}}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	{{! IMPORT CSS FILES }}
+	<link rel="stylesheet" type="text/css" href="{{assets "css/bootstrap.min.css" }}" />
+	<link rel="stylesheet" type="text/css" href="{{assets "css/style.css" }}" />
+	<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href="{{assets "fonts/glyphicons-halflings-regular.ttf" }}" />
+	<script id="dt" type="template/handlebars">
+
+    {{ghost_head}}
+</head>
+
+<body>
+	{{{body}}}
+	{{ghost_foot}}
+</body>
+</html>

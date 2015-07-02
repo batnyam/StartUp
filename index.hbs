@@ -1,0 +1,61 @@
+{{!> default}}
+
+<main id="container" role="main">
+		<aside class="sidebar">
+			<div class="col-xs-12 logo"><img class="col-xs-12" src="{{assets "img/logo.jpg"}}" /></div>
+			<div class="col-md-9 logo-text">{{@blog.title}}</div>
+			<div class="col-md-12 slogan"><b>{{@blog.description}}</b></div>
+			<div class="col-md-9 seperator"></div>
+
+			<div class="col-md-12 nav_menu">
+				<ul>
+					<a href="http://www.google.com/"><li>Homepage</li></a>
+					<a href="http://www.facebook.com"><li>Contact us</li></a>
+				</ul>
+			</div>
+
+			<div class="col-md-9 seperator"></div>
+
+			<div class="col-md-12 search"><input type="text" class="form-control"placeholder="Search..."></input></div>
+
+			<div class="col-md-12 social">
+				<img class="col-md-3 img" src="{{ assets "img/fb.png" }}" />
+				<img class="col-md-3 img" src="{{ assets "img/g+.png" }}" />
+				<img class="col-md-3 img" src="{{ assets "img/tw.png" }}" />
+				<img class="col-md-3 img" src="{{ assets "img/yt.png" }}" />
+			</div>
+		</aside>
+
+		<section class="col-md-10 wrapper">
+			<div class="col-md-9 content_wrapper">
+				{{#foreach posts}}
+				<div class="col-md-12 entry">
+			
+					<div class="col-md-2 date"><time datetime="{{date format='MM-DD-YYYY'}}">{{date format="DD MM YYYY"}}</time></div>
+					<div class="col-md-12 title"><a href="{{url}}">{{{title}}}</a></div>
+					<div class="col-md-12 post">{{excerpt}}</div>
+
+					<div class="col-md-12 post_about">
+						<div class="col-md-3 author"><span class="glyphicon glyphicon-user"></span>{{author.name}}</div>
+						<div class="col-md-3 tags"><span class="glyphicon glyphicon-tag"></span>song, mp3</div>
+					</div>
+				</div>
+				{{/foreach}}
+
+				{{pagination}}
+				<div class="col-md-12 pagenav">
+					<div class="col-md-6 pagination">
+						<li class=""><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</div>
+
+					<div class="col-md-6 right">
+						<a href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>

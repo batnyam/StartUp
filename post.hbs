@@ -1,0 +1,20 @@
+{{!< default}}
+	<main id="container" role="main">
+		<section class="col-md-10 wrapper">
+			<div class="col-md-9 content_wrapper">
+				
+				<div class="col-md-12 entry">
+				{{#post}}
+					<div class="col-md-2 date"><time datetime="{{date format="MM DD, YYYY"}}">{{date format='DD MM YYYY'}}</time></div>
+					<div class="col-md-12 title">{{{title}}}</div>
+					<div class="col-md-12 post">{{content}}</div>
+
+					<div class="col-md-12 post_about">
+						<div class="col-md-3 author"><span class="glyphicon glyphicon-user"></span>{{author.name}}</div>
+						<div class="col-md-3 tags"><span class="glyphicon glyphicon-tag"></span>song, mp3</div>
+					</div>
+				{{/post}}
+				</div>		
+			</div>
+		</section>
+	</main>
